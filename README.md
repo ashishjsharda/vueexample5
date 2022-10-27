@@ -1,4 +1,4 @@
-# hellovue
+# Example using nested components
 
 ## Project setup
 ```
