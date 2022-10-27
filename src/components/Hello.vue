@@ -5,9 +5,6 @@
 </template>
 <script>
 export default {
-  name: 'Hello',
-  props: {
-    who: String
-  }
+ props: ['who']
 }
 </script>
