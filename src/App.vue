@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <Greeting greeting="Hey" who="JavaScript"/>
+    <Greeting :greeting="greeting" :who="who"/>
   </div>
 </template>
 
@@ -9,10 +9,17 @@
 import Greeting from "./components/Greeting";
 
 export default {
-  name: 'App',
+
   components: {
     Greeting
-  }
+  },
+
+  data() {
+    return {
+      greeting: "Hello",
+      who: "Vue"
+    };
+  },
 }
 </script>
 
