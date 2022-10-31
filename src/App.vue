@@ -2,6 +2,7 @@
   <div id="app">
 
     <Greeting :greeting="greeting" :who="who"/>
+    <button @click="newGreeting()">Change Greeting</button>
   </div>
 </template>
 
