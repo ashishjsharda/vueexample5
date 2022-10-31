@@ -8,6 +8,10 @@
 <script>
 import Greeting from "./components/Greeting";
 
+const possibleGreetings=[
+  {greeting:"Hello",who:"Vue"},
+  {greeting:"Hola",who:"Vue"}
+]
 export default {
 
   components: {
@@ -16,10 +20,23 @@ export default {
 
   data() {
     return {
-      greeting: "Hello",
-      who: "Vue"
-    };
+      currentIndex:0
+    }
   },
+  computed:{
+    currentGreeting(){
+      return possibleGreetings[this.currentIndex]
+    },
+    greeting(){
+      return this.currentGreeting.greeting
+    },
+    who(){
+      return this.currentGreeting.who
+    }
+  }
+
+
+
 }
 </script>
 
