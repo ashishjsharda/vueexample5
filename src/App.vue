@@ -34,6 +34,11 @@ export default {
     who(){
       return this.currentGreeting.who
     }
+  },
+  methods:{
+    newGreeting(){
+      this.currentIndex=this.currentIndex===possibleGreetings.length-1?0:this.currentIndex+1
+    }
   }
 
 
