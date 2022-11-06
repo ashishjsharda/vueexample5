@@ -8,7 +8,12 @@
 
 <script>
 export default {
-  name: "Repeat"
+  props: ['time','content'],
+  computed:{
+    repetitions(){
+      return Array.from({length:this.time},(v,k)=>k+1)
+    }
+  }
 }
 </script>
 
